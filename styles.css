@@ -4,6 +4,12 @@ body {
     padding: 0;
 }
 
+.banner {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+
 .navbar {
     background-color: #333;
     overflow: hidden;
