@@ -38,7 +38,7 @@ body {
 /* Dropdown Container */
 .dropdown {
     float: left;
-    overflow: hidden;
+    position: relative;
 }
 
 /* Dropdown Button */
@@ -54,6 +54,8 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #333;
     min-width: 200px;
     z-index: 1;
