@@ -12,7 +12,7 @@ body {
 
 .navbar {
     background-color: #333;
-    overflow: hidden;
+    overflow: visible;
     z-index: 100;
     position: relative;
 }
