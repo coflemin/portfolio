@@ -6,9 +6,12 @@ body {
 }
 
 .banner {
-    background-color: red;
-    height: 100px;
+    background-image: url('/portfolio/images/portfolio_banner.png');
+    height: 150px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .navbar {
