@@ -52,3 +52,29 @@ body {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.portfolio-image {
+    max-width: 70%; /* Adjust this value to your preference */
+    display: block; 
+    margin: 20px auto; /* Centers the image and gives space above and below */
+    border: 5px solid #333; /* Adds a border around the image */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for visual distinction */
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distributes the images evenly */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if there's not enough space */
+}
+
+.image-container img {
+    margin: 10px; /* Adds some space between the images */
+    flex: 1; /* Allows images to grow and take up available space */
+}

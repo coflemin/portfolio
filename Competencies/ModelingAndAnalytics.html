@@ -29,24 +29,32 @@
     </div>
 
     <!-- Page Content -->
-    <div class="content-section">
+    <div class="content">
         
         <h1>LiDAR Analysis for Forest Structural Diversity Assessment</h1>
 
-        <h2>Problem Description:</h2>
+        <h3>Problem Description</h3>
         <p>Forests, as vital ecosystems, offer a plethora of ecological, social, and economic advantages. However, they face numerous challenges, including deforestation, degradation, and fragmentation. It's imperative to comprehend the structure and functionality of forests for their effective management and conservation. LiDAR technology has recently emerged as a pivotal tool for forest mapping and monitoring, offering a detailed three-dimensional representation of the forest canopy. This facilitates the accurate calculation of various forest structural diversity metrics, which are crucial for evaluating forest health, productivity, and biodiversity. While several studies have underscored the significance of LiDAR-derived metrics for forest management, most have been confined to specific sites or regions. A comparative study, like the one undertaken here, was essential to discern the utility of LiDAR-derived metrics across different forested sites. The primary objective was to compare forest structural diversity metrics derived from LiDAR data at two semi-forested study sites in Virginia.</p>
     
-        <h2>Analysis Procedures:</h2>
+        <h3>Analysis Procedures</h3>
         <p>The project employed LiDAR data to investigate and compare forest structural diversity metrics at two distinct sites: Blandy Experimental Farm NEON (BLAN) and Mountain Lake Biological Station (SCBI). The research aimed to identify structural attributes' similarities and differences by calculating various metrics like height, cover, openness, heterogeneity, and vegetation area using the LidR package in R. The chosen study sites were based on factors like accessibility, ecological significance, and the availability of high-quality LiDAR data. The data consisted of classified point clouds for both study sites, and additional land cover data from the 2019 National Land Cover Database (NLCD) raster. The R script was employed to generate the forest structural diversity metrics, which involved importing the data, processing it to remove unwanted points, correcting for ground height, generating a Canopy Height Model (CHM), and calculating several structural diversity metrics from the CHM.</p>
     
-        <h2>Results:</h2>
+        <h3>Results</h3>
         <p>The structural diversity metrics were derived for two heavily forested mountainous regions, BLAN and SCBI. The results indicated that while both sites were dominated by deciduous forest, SCBI exhibited higher values for most metrics, suggesting a more intricate forest structure with a greater variability in canopy height and topography. Conversely, BLAN showcased a higher mean maximum canopy height and a more closed canopy. The LiDAR data and metrics also pinpointed areas of potential interest for further research or management. For instance, the deep gap fraction in SCBI indicated a higher frequency of canopy gaps, which could influence forest dynamics and ecosystem processes.</p>
-        <img src="/portfolio/images/BLAN_las_raw.png" alt="Full unfiltered BLAN las point cloud" title="Figure 3: Full unfiltered BLAN las point cloud">
-        <img src="/portfolio/images/BLAN_las_processed.png" alt="BLAN las point cloud with outliers removed and normalized to ground" title="Figure 5: BLAN las point cloud with outliers removed and normalized to ground">
-    
-        <h2>Reflection:</h2>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/BLAN_las_raw.png" alt="Full unfiltered BLAN las point cloud" title="Full unfiltered BLAN las point cloud">
+                <figcaption>Full unfiltered BLAN las point cloud</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/BLAN_las_processed.png" alt="BLAN las point cloud with outliers removed and normalized to ground" title="BLAN las point cloud with outliers removed and normalized to ground">
+                <figcaption>BLAN las point cloud with outliers removed and normalized to ground</figcaption>
+            </figure>
+        </div>
+        
+        <h3>Reflection</h3>
         <p>This project was instrumental in enhancing my understanding of the utility of LiDAR-derived metrics in forest management and conservation. By focusing on the comparison of forest structural diversity metrics across two distinct sites, I acquired competence in utilizing LiDAR data for detailed forest structure analysis. The project augmented my knowledge and skills in the realm of forest structural diversity assessment, emphasizing the importance of such metrics in understanding forest health, productivity, and biodiversity. The learning acquired from this project is paramount, as it underscores the significance of assessing forest structure and diversity in understanding ecosystem functionality and management. Reflecting upon the assignment, I believe that the methodology employed and the insights derived are pivotal for future forest conservation endeavors. The project not only enriched my technical skills but also instilled a deeper appreciation for the intricate dynamics of forest ecosystems and the importance of preserving them.</p>
-    
+
     </div>
     
 </body>
