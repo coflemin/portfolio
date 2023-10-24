@@ -30,8 +30,56 @@
 
     <!-- Page Content -->
     <div class="content">
-        <h1>Databases and Database Management</h1>
-        <p>This page is under construction.]</p>
+
+        <h1>GIS Geodatabase for NC State University Facilities Management</h1>
+
+        <h3>Problem Description</h3>
+        <p>NC State University, looking towards improved campus planning and facilities management, expressed the need for a comprehensive geodatabase. This geodatabase would serve as a foundation for future management of campus buildings and other related facilities. The primary objective of this assignment was to deliver a file geodatabase with georeferenced feature classes that represent various campus elements, such as streets, sidewalks, streams, lakes, buildings, and fields.</p>
+        
+        <h3>Analysis Procedures</h3>
+        <p>The project employed ArcGIS Pro 2.8 and utilized tools from the data management and conversion toolboxes. Specifically, the tools used included georeferencing, define projection, feature to polygon, CAD to geodatabase, and feature class to feature class tools. The provided data for this assignment consisted of the NC State University Masterplan 2005 CAD drawing file and a Campus orthophoto from NC OneMap 2017 with a 1ft cell size. The methodology involved georeferencing the CAD drawing using the campus orthophoto and then converting it into a geodatabase. This geodatabase would then be populated with the required feature classes extracted from the existing point and polygon feature classes. Geoprocessing was conducted using the mentioned tools, and a final geodatabase was curated, containing features representing various campus entities.</p>
+        
+        <h3>Results</h3>
+        <p>The outcome of the geoprocessing efforts resulted in a robust file geodatabase that incorporated georeferenced feature classes of the campus. This database included elements like streets, sidewalks, streams, lakes, buildings, and fields, providing a holistic representation of NC State University's campus. A geoprocessing model diagram was created using the model builder in ArcGIS Pro, ensuring clarity in the implemented methodology. Additionally, an illustrative visual was produced, displaying NCSU facilities as feature classes, all derived from the georeferenced CAD data.</p>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/NCSU_geoprocessing_model.png" alt="Geoprocessing model diagram" title="Geoprocessing model diagram">
+                <figcaption>Geoprocessing model diagram created with model builder in ArcGIS Pro</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/NCSU_facilities_features.png" alt="NCSU facilities as feature classes" title="NCSU facilities as feature classes">
+                <figcaption>Image showing NCSU facilities as feature classes created from georeferenced CAD data</figcaption>
+            </figure>
+        </div>
+        
+        <h3>Reflection</h3>
+        <p>This endeavor was an enriching experience that furthered my proficiency in the domain of GIS and geodatabase creation. The project was not merely about converting data but understanding the intricacies of campus planning and ensuring that every element was adequately represented. Utilizing ArcGIS Pro tools, I was able to translate the needs of NC State University into a practical geodatabase solution. Reflecting on the assignment, I believe that the skills and insights garnered will play a crucial role in future GIS projects. This task reinforced the importance of detailed geospatial data in campus management and planning, and how geodatabases can serve as powerful tools in such endeavors.</p>
+
+        <h1>National Park Service Fish Database Design</h1>
+
+        <h3>Problem Description</h3>
+        <p>The National Park Service (NPS) required a comprehensive database solution to store information related to fish collected at national parks. There was a need to design a structured, reliable, and scalable database that would not only house this data but also maintain referential integrity between various entities. Moreover, the database should allow for complex queries to derive insights from the collected data, such as determining the most prevalent non-game fish species at specific sites.</p>
+
+        <h3>Analysis Procedures</h3>
+        <p>The project involved creating a relational database structured around five main tables: `tbl_Sites`, `R_SiteVisits`, `W_FI_Gamefish`, `W_FI_Non_Gamefish`, and `W_FI_zdd_FISH_Species`. These tables were designed to store data on the sites, site visits, game fish, non-game fish, and fish species, respectively. The database was implemented in PostgreSQL, and Data Definition Language (DDL) statements were employed to define the structure of the database, including constraints for maintaining data consistency and integrity.</p>
+
+        <h3>Results</h3>
+        <p>The database was successfully populated using Data Manipulation Language (DML) statements, importing data from various CSV files. Sample queries, such as determining the most common non-game fish species at a given site, could be executed efficiently. An Entity-Relationship (ER) diagram and a UML diagram were also produced to visually represent the architecture of the database and the relationships between its entities.</p>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/ER_Diagram.png" alt="Entity-Relationship Diagram for NPS Fish Database" title="Entity-Relationship Diagram for NPS Fish Database">
+                <figcaption>Entity-Relationship Diagram for NPS Fish Database</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/UML_Diagram.png" alt="UML Diagram" title="UML Diagram">
+                <figcaption>UML Diagram</figcaption>
+            </figure>
+        </div>
+
+        <h3>Reflection</h3>
+        <p>The process of designing, creating, and populating the fish database for the National Park Service was an enriching experience. It underscored the importance of maintaining referential integrity in databases, ensuring data consistency, and building scalable solutions. Addressing potential referential integrity problems was pivotal for this project's success, especially when defining relationships between entities. By systematically ensuring that each relationship was correctly established and all constraints were appropriately set, the final database became a robust solution for NPS's needs. This project bolstered my confidence in handling large-scale database projects and reiterated the significance of meticulous planning and structure in database design.</p>
+
     </div>
+
 </body>
 </html>

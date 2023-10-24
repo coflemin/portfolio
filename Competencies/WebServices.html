@@ -30,8 +30,42 @@
 
     <!-- Page Content -->
     <div class="content">
-        <h1>Web Services</h1>
-        <p>This page is under construction.</p>
+
+        <h1>Integration of Geoprocessing Services in Web Application</h1>
+
+        <h3>Problem Description</h3>
+        <p>The increasing importance of geospatial analytics necessitates a seamless integration of geoprocessing tasks into web applications. The task at hand was to publish custom geoprocessing services from a model and integrate them into a dynamic web application. The primary challenge was to merge web services effectively - map, feature, and geoprocessing, to provide an integrated user experience.</p>
+
+        <h3>Analysis Procedures</h3>
+        <p>Using the Enterprise Geodatabase of GEWA (George Washington Birthplace National Monument) Base Data, coupled with Tabular PostgreSQL data, I embarked on the development of a geoprocessing task via Model Builder. This model was specifically designed to isolate streams in GEWA that were proximate to stream fish sampling locations. After achieving the desired output in Model Builder, I transitioned to publishing my model as a geoprocessing service on ArcGIS Server. The culmination of this procedure was the development of a tailored web application using the Web AppBuilder. The application not only integrated my geoprocessing service but also provided an interface for users to input specific parameters, particularly buffer distances, to modify the output dynamically.</p>
+
+        <h3>Results</h3>
+        <p>The final model had the capability to detect Fish Sampling Locations within 100m of streams. Following user inputs, it would buffer these locations by a specified distance, constrain these buffers to the GEWA boundary, and subsequently clip the streams accordingly. This produced a dynamic layer showing streams within the GEWA boundary that were in close proximity to fish sampling sites. The seamless integration of this geoprocessing service into the web application provided a practical tool for end-users.</p>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/GeoProcessingModel_ArcGISPro.png" alt="Geoprocessing model created with model builder in ArcGIS Pro" title="Geoprocessing model created with model builder in ArcGIS Pro">
+                <figcaption>Geoprocessing model created with model builder in ArcGIS Pro</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/WebApp_Screenshot.png" alt="Screenshot of ArcGIS Web Application showing integrated Buffer tool" title="Screenshot of ArcGIS Web Application showing integrated Buffer tool">
+                <figcaption>Screenshot of ArcGIS Web Application showing integrated Buffer tool</figcaption>
+            </figure>
+        </div>
+
+        <h3>Reflection</h3>
+        <p>The process of developing and integrating the geoprocessing service was enlightening. It offered a deep dive into the world of geospatial analytics and demonstrated the power of interactive web applications. The integration of dynamic geoprocessing tasks with user input fields showcases the vast potential of GIS in delivering customized solutions. Reflecting on the experience, I realize the significance of aligning backend geoprocessing capabilities with frontend interfaces to offer a holistic user experience. This project has been instrumental in advancing my skills in GIS web application development and has paved the way for further exploration in this domain.</p>
+
+        <h1>Creating a Web Application to Visualize Shoreline Change</h1>
+
+        <h3>Problem Description</h3>
+
+        <h3>Analysis Procedures</h3>
+
+        <h3>Results</h3>
+
+        <h3>Reflection</h3>
+
     </div>
+
 </body>
 </html>

@@ -55,6 +55,28 @@
         <h3>Reflection</h3>
         <p>This project was instrumental in enhancing my understanding of the utility of LiDAR-derived metrics in forest management and conservation. By focusing on the comparison of forest structural diversity metrics across two distinct sites, I acquired competence in utilizing LiDAR data for detailed forest structure analysis. The project augmented my knowledge and skills in the realm of forest structural diversity assessment, emphasizing the importance of such metrics in understanding forest health, productivity, and biodiversity. The learning acquired from this project is paramount, as it underscores the significance of assessing forest structure and diversity in understanding ecosystem functionality and management. Reflecting upon the assignment, I believe that the methodology employed and the insights derived are pivotal for future forest conservation endeavors. The project not only enriched my technical skills but also instilled a deeper appreciation for the intricate dynamics of forest ecosystems and the importance of preserving them.</p>
 
+        <h1>Supervised Image Classification for Black Water National Wildlife Refuge</h1>
+    
+        <h3>Problem Description</h3>
+        <p>Within the context of Black Water National Wildlife Refuge, the project revolved around executing a supervised image classification of an aerial photograph of the refuge. This methodological approach, once refined, could be expanded to encompass aerial imagery for the entirety of the refuge. This would equip the refuge managers with vital land cover data, essential for the development of an effective management plan.</p>
+    
+        <h3>Analysis Procedures</h3>
+        <p>The task was executed utilizing ArcGIS Pro 2.8, combined with the training samples manager and classification tools from the classification toolset. The additional tools from the data management toolbox, namely 'Add Field' and 'Calculate Field', were also employed. The data foundation for this project was an aerial photograph provided by the instructor. The methodology involved creating training samples grounded on the NLCD land cover classes, using these samples to classify the photograph, and then iterating this process by enhancing the training samples. The aerial photograph's appearance was adjusted to color-infrared. Seven land cover classes: Forest, Cultivated, Herbaceous, Barren Land, Developed/Impervious, Wetland, and Water, each received two training sample polygons. These were then unified into one multipart feature per land cover class. The image classification tool was then run, producing a classified output raster. This raster was exported as a GRID file, followed by the addition of a field denoting the area of each class. The Calculate Field function populated this field with area values in square meters. Post evaluation, additional training samples were created to refine the classification, culminating in a second classification cycle.</p>
+    
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/NLCD_TrainingSamples1.png" alt="First round of training sample polygons for NLCD classification" title="First round of training sample polygons for NLCD classification">
+                <figcaption>First round of training sample polygons for the NLCD classification</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/NLCD_Classification1.png" alt="First NLCD land cover classification" title="First NLCD land cover classification">
+                <figcaption>First NLCD land cover classification created using training sample polygons</figcaption>
+            </figure>
+        </div>
+
+        <h3>Reflection</h3>
+        <p>The assignment showcased the adeptness in conducting supervised classifications of raster images to deduce NLCD land cover classes. This involved the creation of training samples and computing the area for each land cover class, allowing comparative analysis between classifications. Beyond the immediate project, these skills can be pivotal in analyzing area changes over time, providing deeper insights into landscape shifts and management needs.</p>    
+    
     </div>
     
 </body>

@@ -30,8 +30,75 @@
 
     <!-- Page Content -->
     <div class="content">
-        <h1>Programming</h1>
-        <p>This page is under construction.</p>
+            
+        <h1>Planet Imagery Tool for Swine NCAFO</h1>
+
+        <h3>Problem Description</h3>
+        <p>Swine farming plays a significant role in North Carolina's economy, and maintaining biosecurity and environmental security of these operations is crucial. Satellite imagery serves as a pivotal tool in analyzing these aspects. However, acquiring recent, standard-compliant imagery can be intricate, often necessitating searches across multiple sources and individual downloads. This project sought to simplify this process by automating the acquisition and processing of imagery for swine farms in North Carolina, leveraging the capabilities of Planet, a commercial satellite imagery provider.</p>
+
+        <h3>Analysis Procedures</h3>
+        <p>Developed as a script geoprocessing tool accompanied by a Python script, this solution fetches imagery from Planet for swine farms in North Carolina. It begins by locating NC swine farms based on user-defined parameters from a list of permitted NCAFO. Subsequently, the tool retrieves the most recent imagery available for these locations. These images, covering a 1000-meter radius from the farm location, are automatically integrated into an ArcGIS Pro project, facilitating subsequent analysis. The tool is versatile, allowing adjustments such as account modifications, image type preferences, and image dimension settings. Furthermore, I integrated the mapping module, enabling automatic addition of relevant outputs, like the selected farm locations' point feature class and downloaded raster images, to a map within the ArcGIS Pro project.</p>
+
+        <h3>Results</h3>
+        <p>The tool effectively automates the acquisition of recent imagery for every selected swine farm in North Carolina. It proves invaluable during critical events like disease outbreaks or flooding. In a disease scenario, the imagery unveils farm layouts, illustrating barn placements, auxiliary structures, and roadways. Such insights empower stakeholders to craft, implement, or assess adherence to plans designed to manage the outbreak. Meanwhile, in flooding situations, common due to hurricanes, the tool offers quick access to up-to-date imagery of affected farms, aiding in the identification of potential flooding threats to manure lagoons, which, if compromised, can result in severe environmental implications.</p>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/planet_tool_flowchart.png" alt="Flowchart diagramming the Planet Imagery Tool for Swine NCAFO" title="Flowchart diagramming the Planet Imagery Tool for Swine NCAFO">
+                <figcaption>Flowchart diagramming the Planet Imagery Tool for Swine NCAFO</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/planet_tool_gui.png" alt="Planet Imagery Tool for Swine NCAFO geoprocessing tool GUI in ArcGIS Pro" title="Planet Imagery Tool for Swine NCAFO geoprocessing tool GUI in ArcGIS Pro">
+                <figcaption>Planet Imagery Tool for Swine NCAFO geoprocessing tool GUI in ArcGIS Pro</figcaption>
+            </figure>
+        </div>
+
+        <h3>Reflection</h3>
+        <p>This project significantly expanded my knowledge in the domain of geospatial automation. By architecting a solution that integrates commercial satellite imagery with geoprocessing scripts, I recognized the vast potentials of automation in enhancing efficiency in real-world scenarios. The practical applications of the tool, especially during crises like disease outbreaks or environmental hazards, highlighted the profound impact such solutions can have in swiftly informing decisions and mitigating risks. Through this endeavor, not only did I strengthen my technical acumen, but I also developed a profound appreciation for the intertwined nature of technology and its societal ramifications. I am confident that the insights and skills garnered from this project will be instrumental in my future geospatial ventures.</p>
+
+        <h1>Point Pattern Analysis with R</h1>
+
+        <h3>Problem Description</h3>
+        <p>Point Pattern Analysis (PPA) stands as an influential method in analyzing the spatial arrangement of points within a two-dimensional plane. This methodology finds application across numerous disciplines such as forestry, ecology, criminology, epidemiology, and economic geography. This endeavor aims to provide a structured guide on how to scrutinize point patterns, commencing with a rudimentary dataset on a Cartesian coordinate system and subsequently progressing to real-world geographical point-based data from telephone calls. Noteworthy is the stress on leveraging projected data with measurement units like meters or feet, opposed to latitude and longitude, guaranteeing precise spatial calculations.</p>
+
+        <h3>Analysis Procedures</h3>
+        <p>
+            <strong>Part 1: Introductory Point Pattern Analysis with Practice Data</strong>
+            <ul>
+                <li>Initiation with the installation and activation of the "spatstat" and "sf" packages in R.</li>
+                <li>Formulation of a practice point dataset with a predefined seed ensuring reproducibility.</li>
+                <li>Extraction of X, Y coordinates from the articulated dataset.</li>
+                <li>Generation of a Euclidean distance matrix for comprehensive point-to-point distance measurement.</li>
+                <li>Emphasis on Nearest Neighbor Analysis to deduce insights into the compactness or dispersion of the data points.</li>
+                <li>Execution of Density and R-value Analysis, comparing against anticipated densities of arbitrary and perfectly dispersed point structures.</li>
+                <li>Employment of the Z-test to gauge the degree of significance concerning deviations from randomness.</li>
+                <li>Introduction to advanced metrics such as Ripley’s K and L functions to further typify the point pattern.</li>
+            </ul>
+            <strong>Part 2: Real-world Application with Telephone Call Data</strong>
+            <ul>
+                <li>Data acquisition involving the input of phone call and territorial data, symbolizing real-world points of significance.</li>
+                <li>Union of territories, delineated as polygons, into a consolidated area, underpinning precise spatial analysis.</li>
+                <li>Conversion of territories to a window (defined area of interest) using the "maptools" package, and adaptation of phone call points suitable for PPA.</li>
+                <li>Execution of kernel density analyses and L function evaluations to typify the point pattern.</li>
+            </ul>
+        </p>
+
+        <h3>Results</h3>
+        <p>Post comprehensive analysis, the project furnishes a visual representation of the spatial pattern of phone calls within the delineated territory. This visual output accentuates characteristics such as clustering, dispersion, or randomness of the data points. The project successfully achieves a kernel density estimation, pinpointing areas of intense concentration, colloquially termed 'hotspots', and overlays them with the original data points.</p>
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/L_function_visualization.png" alt="Spatial distribution of the point pattern visualized using the L(r)-r function" title="Spatial distribution of the point pattern visualized using the L(r)-r function">
+                <figcaption>Spatial distribution of the point pattern visualized using the L(r)-r function</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/Kernel_density_estimation.png" alt="Kernel density estimation of point patterns" title="Kernel density estimation of point patterns">
+                <figcaption>Kernel density estimation highlighting 'hotspots' with overlaid individual data points</figcaption>
+            </figure>
+        </div>
+
+        <h3>Reflection</h3>
+        <p>This endeavor served as a deep dive into the realm of Point Pattern Analysis utilizing R. By its culmination, I was equipped not just with the foundational understanding of PPA but also with the prowess to dissect and interpret real-world spatial point datasets. This project was instrumental in broadening my horizons on the intricacies of spatial data analysis, bringing to fore the importance of precision in data interpretation, especially in real-world applications. Reflecting upon the project, the amalgamation of theory with practical application, especially the transition from a controlled dataset to actual telephone call data, was an enlightening experience. The project reinforced the importance of meticulous data handling and rigorous analysis in spatial studies.</p>
+
     </div>
+
 </body>
 </html>
