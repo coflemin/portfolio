@@ -25,7 +25,6 @@
         </div>
         <a href="/portfolio/Capstone/">Capstone Experience</a>
         <a href="/portfolio/Reflection/">Program Reflection</a>
-        <!--<a href="/portfolio/Other/">Other</a>-->
     </div>
 
     <!-- Page Content -->
@@ -41,6 +40,7 @@
 
         <h3>Results</h3>
         <p>The final model had the capability to detect Fish Sampling Locations within 100m of streams. Following user inputs, it would buffer these locations by a specified distance, constrain these buffers to the GEWA boundary, and subsequently clip the streams accordingly. This produced a dynamic layer showing streams within the GEWA boundary that were in close proximity to fish sampling sites. The seamless integration of this geoprocessing service into the web application provided a practical tool for end-users.</p>
+        
         <div class="image-container">
             <figure>
                 <img class="portfolio-image" src="/portfolio/images/GeoProcessingModel_ArcGISPro.png" alt="Geoprocessing model created with model builder in ArcGIS Pro" title="Geoprocessing model created with model builder in ArcGIS Pro">
@@ -56,14 +56,29 @@
         <p>The process of developing and integrating the geoprocessing service was enlightening. It offered a deep dive into the world of geospatial analytics and demonstrated the power of interactive web applications. The integration of dynamic geoprocessing tasks with user input fields showcases the vast potential of GIS in delivering customized solutions. Reflecting on the experience, I realize the significance of aligning backend geoprocessing capabilities with frontend interfaces to offer a holistic user experience. This project has been instrumental in advancing my skills in GIS web application development and has paved the way for further exploration in this domain.</p>
 
         <h1>Creating a Web Application to Visualize Shoreline Change</h1>
-
+        
         <h3>Problem Description</h3>
+        <p>In Avon, North Carolina, the shoreline has experienced significant changes over the years, posing a threat to residential properties. This project focuses on visualizing the impact of shoreline change on residential parcels within a critical proximity of 500 feet. The challenge lies in effectively presenting the shift in shoreline from 1980 to 2009 and identifying the properties that have become vulnerable due to this environmental change. The objective is to provide a clear understanding of how shoreline encroachment affects real estate value and residential development.</p>
 
         <h3>Analysis Procedures</h3>
-
+        <p>The project employed data from the US Geological Survey (USGS) to map the Avon shoreline as recorded in 1980 and 2009. Using geospatial technology, we identified residential parcels that fell within 500 feet of the 2009 shoreline but were outside this range in 1980. This analysis highlighted 29 critical parcels representing over $20 million in tax value. The application integrates functionalities to explore detailed information about these parcels, including address, tax value, and ownership details, thus providing a comprehensive view of the impact.</p>
+        
         <h3>Results</h3>
+        <p>The web application successfully demonstrates the advancing shoreline in Avon and its implications on residential properties. Users can interactively explore the affected parcels, gaining insights into the tax value and ownership of properties now considered at risk. The visual comparison between the shorelines of 1980 and 2009 effectively highlights the areas of concern, making the information accessible and understandable to a diverse audience, including property owners, potential investors, and environmental researchers.</p>
+        
+        <div class="image-container">
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/Shoreline_WebApp.png" alt="Screenshot of ArcGIS Web Application showing shoreline change in Avon, NC from 1980 to 2009" title="Screenshot of ArcGIS Web Application showing shoreline change in Avon, NC from 1980 to 2009">
+                <figcaption>Screenshot of ArcGIS Web Application showing shoreline change in Avon, NC from 1980 to 2009</figcaption>
+            </figure>
+            <figure>
+                <img class="portfolio-image" src="/portfolio/images/Shoreline_WebApp_Chart.png" alt="Screenshot of ArcGIS Web Application showing chart of value of affected parcels" title="Screenshot of ArcGIS Web Application showing chart of value of affected parcels">
+                <figcaption></figcaption>
+            </figure>
+        </div>
 
         <h3>Reflection</h3>
+        <p>This project underscored the importance of geospatial visualization in understanding and communicating environmental changes and their socio-economic impacts. It presented a unique challenge in integrating historical geospatial data with contemporary property records to create a user-friendly and informative tool. The project not only served as a vital resource for the local community in Avon but also provided a scalable model for other coastal towns grappling with similar shoreline changes. It emphasized the power of geospatial technology in making complex environmental data accessible and actionable for community planning and risk management.</p>
 
     </div>
 
